@@ -1,0 +1,81 @@
+button.interaction-button {
+    background-color: transparent;
+    color:  var(--ion-color-primary);
+    outline: none;
+  }
+  html.md button.interaction-button {
+    text-transform: uppercase;
+  }
+
+  div.tags-bar {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  div.chip {
+    background: var(--ion-color-light);
+    color: var(--ion-color-light-contrast);
+    border: 1px solid #ebebeb;
+    border-radius: 30px;
+    padding: 6px 15px;
+    max-width: 220px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 5px;
+    text-align: center;
+  }
+  
+div.card-wrapper {
+    background: var(--ion-color-white);
+    color: var(--ion-color-white-contrast);
+    position: relative;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid lightgray;
+  }
+  div.card-header {
+    background: var(--ion-color-light);
+    color: var(--ion-color-light-contrast);
+    padding: 5px 0;
+    height: 55px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  div.card-date {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35px;
+    font-size: 11px;
+    color: gray;
+  }
+  div.card-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+  ion-icon.card-ellipsis {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .ripple {
+    background-position: center;
+    transition: background 0.5s;
+  }
+  .ripple:hover {
+    background:white radial-gradient(circle, transparent 1%, rgb(243, 243, 243) 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color: rgb(245, 245, 245);
+    background-size: 100%;
+    transition: background 0s;
+  }
+  
